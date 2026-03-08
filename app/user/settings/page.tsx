@@ -1,7 +1,7 @@
-﻿'use client'
+'use client'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Label } from '@/components/ui/label'
 import { Button } from '@/components/ui/button'
 import { Switch } from '@/components/ui/switch'
@@ -21,13 +21,14 @@ export default function UserSettingsPage() {
     setIsSaving(true)
     setTimeout(() => {
       setIsSaving(false)
-      alert('Settings saved!')
-      router.push('/')
+      // BUG FIX: was routing to '/' (landing page) — should go back to /user dashboard
+      router.push('/user')
     }, 500)
   }
 
   const handleBack = () => {
-    router.push('/')
+    // BUG FIX: was routing to '/' (landing page) — should go back to /user dashboard
+    router.push('/user')
   }
 
   return (
@@ -37,7 +38,7 @@ export default function UserSettingsPage() {
         <div className="mb-6">
           <Button variant="ghost" onClick={handleBack} className="mb-4 -ml-2">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back
+            Back to Dashboard
           </Button>
           <h1 className="text-3xl font-bold">Settings</h1>
         </div>
@@ -58,6 +59,8 @@ export default function UserSettingsPage() {
                 <SelectContent>
                   <SelectItem value="english">English</SelectItem>
                   <SelectItem value="hindi">Hindi</SelectItem>
+                  <SelectItem value="kannada">Kannada</SelectItem>
+                  <SelectItem value="tamil">Tamil</SelectItem>
                 </SelectContent>
               </Select>
             </CardContent>
@@ -97,7 +100,7 @@ export default function UserSettingsPage() {
           <div className="flex gap-4">
             <Button size="lg" className="flex-1" onClick={handleSave} disabled={isSaving}>
               <Save className="w-4 h-4 mr-2" />
-              {isSaving ? 'Saving...' : 'Save'}
+              {isSaving ? 'Saving...' : 'Save Settings'}
             </Button>
             <Button size="lg" variant="outline" className="flex-1" onClick={handleBack} disabled={isSaving}>
               Cancel
