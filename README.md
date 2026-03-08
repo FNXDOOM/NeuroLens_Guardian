@@ -2,7 +2,7 @@
 
 An AI-powered assistive mobility platform for elderly users and people with cognitive disabilities or autism.
 
-## 🎯 Overview
+## Overview
 
 NeuroLens Guardian provides real-time navigation assistance, hazard detection, and safety monitoring through:
 - **AR Detection** - Multi-mode camera detection (Webcam, Mobile, AR Glasses) with real-time TensorFlow.js object detection
@@ -15,7 +15,7 @@ NeuroLens Guardian provides real-time navigation assistance, hazard detection, a
 - **Journey Replay** - Review past journeys and analyze patterns
 - **Dynamic Dashboard** - Real-time status updates synced across all components
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 18+
@@ -44,7 +44,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 neurolens-guardian/
@@ -146,7 +146,7 @@ neurolens-guardian/
 └── public/              # Static assets
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **Framework**: Next.js 16 (App Router), React 19
@@ -173,11 +173,11 @@ neurolens-guardian/
 - Browser Geolocation API
 - Web Speech API (voice)
 
-## 📱 Features
+## Features
 
 ### User Features
 
-✅ **AR Detection (Multi-Mode)**
+**AR Detection (Multi-Mode)**
 - **Webcam Mode**: Desktop camera with front-facing detection
 - **Mobile Mode**: Smartphone rear camera optimized for mobile
 - **AR Glasses Mode**: 3D visualization with live camera sync
@@ -187,7 +187,7 @@ neurolens-guardian/
 - Automatic distress engine updates
 - Seamless mode switching without losing detections
 
-✅ **3D AR Simulation**
+**3D AR Simulation**
 - Immersive AR glasses visualization
 - Real-time sync with camera detections
 - Dynamic hazard markers (vehicles, pedestrians, obstacles)
@@ -197,7 +197,7 @@ neurolens-guardian/
 - Safe Zone markers with distance
 - Modal-based access from dashboard
 
-✅ **Dynamic Dashboard**
+**Dynamic Dashboard**
 - Live status card with real-time distress engine updates
 - Nearest Safe Zone card with live distance calculation
 - Live navigation panel with route info and ETA
@@ -206,7 +206,7 @@ neurolens-guardian/
 - Guardian notification status
 - Demo mode for testing scenarios
 
-✅ **Navigation**
+**Navigation**
 - Turn-by-turn directions with OpenRouteService
 - Voice guidance with Web Speech API
 - Safe route planning
@@ -215,7 +215,7 @@ neurolens-guardian/
 - Real-time route updates
 - Distance and ETA display
 
-✅ **AI Assistant**
+**AI Assistant**
 - Conversational interface powered by Groq AI
 - Context-aware responses
 - Distress detection and analysis
@@ -224,7 +224,7 @@ neurolens-guardian/
 - Multi-turn conversations
 - Emergency response suggestions
 
-✅ **Safe Zones**
+**Safe Zones**
 - Interactive MapLibre map with 8 styles
 - Nearby assistance points discovery
 - Safety ratings and amenities
@@ -233,7 +233,7 @@ neurolens-guardian/
 - Favorite locations
 - Real-time updates
 
-✅ **Public Transport**
+**Public Transport**
 - Route planning
 - Real-time updates
 - Accessibility info
@@ -241,7 +241,7 @@ neurolens-guardian/
 - Alternative routes
 - Transit state tracking
 
-✅ **Voice Assistant**
+**Voice Assistant**
 - Hands-free control
 - Voice commands
 - Speech feedback with Web Speech API
@@ -249,7 +249,7 @@ neurolens-guardian/
 - Speak current guidance
 - Error handling for interruptions
 
-✅ **Emergency**
+**Emergency**
 - SOS button with manual trigger
 - Guardian contacts
 - Auto emergency call
@@ -257,7 +257,7 @@ neurolens-guardian/
 - Emergency broadcast
 - Distress level monitoring
 
-✅ **Settings**
+**Settings**
 - 9 language support
 - Theme customization (light/dark)
 - Accessibility options
@@ -266,57 +266,58 @@ neurolens-guardian/
 - Notification preferences
 
 ### Caregiver Features
-✅ **Monitoring Dashboard**
+
+**Monitoring Dashboard**
 - Real-time location tracking
 - Live journey monitoring
 - Alert management
 - User status overview
 - Quick actions
 
-✅ **Journey Replay**
+**Journey Replay**
 - Historical journey review
 - Route visualization
 - Event timeline
 - Pattern analysis
 - Hazard history
 
-✅ **Alerts & Notifications**
+**Alerts & Notifications**
 - Real-time alerts
 - Priority levels
 - Alert history
 - Custom preferences
 - Multi-channel delivery
 
-✅ **User Management**
+**User Management**
 - Multiple user monitoring
 - User profiles
 - Contact management
 - Settings control
 
-✅ **Analytics**
+**Analytics**
 - Journey statistics
 - Safety metrics
 - Distress patterns
 - Usage insights
 
-## 🎨 Pages & Routes
+## Pages & Routes
 
 | Route | Description | Status |
 |-------|-------------|--------|
-| `/` | Landing page | ✅ |
-| `/user` | User dashboard | ✅ |
-| `/user/settings` | User settings (9 sections) | ✅ |
-| `/caregiver` | Caregiver dashboard | ✅ |
-| `/caregiver/settings` | Caregiver settings | ✅ |
-| `/ar-vision` | AR camera interface | ✅ |
-| `/ar-glasses` | AR glasses simulation | ✅ |
-| `/ar-showcase` | AR demo showcase | ✅ |
-| `/ai-assistant` | AI chat assistant | ✅ |
-| `/safe-zones` | Safe Zone discovery | ✅ |
-| `/monitoring` | Caregiver monitoring | ✅ |
-| `/public-transport` | Public transport | ✅ |
+| `/` | Landing page | Done |
+| `/user` | User dashboard | Done |
+| `/user/settings` | User settings (9 sections) | Done |
+| `/caregiver` | Caregiver dashboard | Done |
+| `/caregiver/settings` | Caregiver settings | Done |
+| `/ar-vision` | AR camera interface | Done |
+| `/ar-glasses` | AR glasses simulation | Done |
+| `/ar-showcase` | AR demo showcase | Done |
+| `/ai-assistant` | AI chat assistant | Done |
+| `/safe-zones` | Safe Zone discovery | Done |
+| `/monitoring` | Caregiver monitoring | Done |
+| `/public-transport` | Public transport | Done |
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -356,7 +357,7 @@ GROQ_API_KEY=[configured]
 
 **Known Issue**: RLS policy has infinite recursion. Workaround applied in code. Fix available in `database/fix-rls-policy.sql`.
 
-## 🧪 Development
+## Development
 
 ```bash
 # Development server (with Turbopack)
@@ -386,79 +387,79 @@ node utils/testAIRoutes.js
 - ESLint configured
 - Tailwind JIT mode
 
-## 🚧 Current Status
+## Current Status
 
-### ✅ Completed Features
+### Completed Features
 
 **Core Infrastructure**
-- ✅ Next.js 16 App Router setup
-- ✅ TypeScript configuration
-- ✅ Tailwind CSS + shadcn/ui
-- ✅ Environment configuration
-- ✅ Database schema & seed data
+- Next.js 16 App Router setup
+- TypeScript configuration
+- Tailwind CSS + shadcn/ui
+- Environment configuration
+- Database schema & seed data
 
 **AR Detection & Simulation**
-- ✅ Multi-mode AR detection (Webcam, Mobile, AR Glasses)
-- ✅ TensorFlow.js object detection integration
-- ✅ Real-time camera feed processing
-- ✅ 3D AR glasses simulation with Three.js
-- ✅ Live camera-to-3D sync
-- ✅ Dynamic hazard markers in 3D space
-- ✅ Warning signs and directional arrows
-- ✅ Context-aware HUD messages
-- ✅ Seamless mode switching
+- Multi-mode AR detection (Webcam, Mobile, AR Glasses)
+- TensorFlow.js object detection integration
+- Real-time camera feed processing
+- 3D AR glasses simulation with Three.js
+- Live camera-to-3D sync
+- Dynamic hazard markers in 3D space
+- Warning signs and directional arrows
+- Context-aware HUD messages
+- Seamless mode switching
 
 **Dynamic Dashboard**
-- ✅ Live status card with distress engine
-- ✅ Nearest Safe Zone card with live updates
-- ✅ Live navigation panel with route info
-- ✅ Quick actions with real functionality
-- ✅ Speech synthesis for guidance
-- ✅ Real-time state synchronization
+- Live status card with distress engine
+- Nearest Safe Zone card with live updates
+- Live navigation panel with route info
+- Quick actions with real functionality
+- Speech synthesis for guidance
+- Real-time state synchronization
 
 **UI Components (50+)**
-- ✅ Navigation & layout
-- ✅ AR camera views
-- ✅ Map interfaces
-- ✅ Dashboard panels
-- ✅ Settings pages
-- ✅ Alert systems
-- ✅ Emergency controls
-- ✅ Modal components
+- Navigation & layout
+- AR camera views
+- Map interfaces
+- Dashboard panels
+- Settings pages
+- Alert systems
+- Emergency controls
+- Modal components
 
 **Services & APIs**
-- ✅ Supabase integration
-- ✅ MapTiler maps (8 styles)
-- ✅ OpenRouteService routing
-- ✅ Groq AI backend
-- ✅ Public transport API
-- ✅ Voice commands
-- ✅ TensorFlow.js detection
+- Supabase integration
+- MapTiler maps (8 styles)
+- OpenRouteService routing
+- Groq AI backend
+- Public transport API
+- Voice commands
+- TensorFlow.js detection
 
 **Features**
-- ✅ AR detection (3 modes)
-- ✅ 3D AR simulation
-- ✅ AI assistant
-- ✅ Safe zone discovery
-- ✅ Caregiver monitoring
-- ✅ Public transport
-- ✅ Voice assistant
-- ✅ Journey replay
-- ✅ Demo mode
-- ✅ Settings (user & caregiver)
-- ✅ Dynamic dashboards
+- AR detection (3 modes)
+- 3D AR simulation
+- AI assistant
+- Safe zone discovery
+- Caregiver monitoring
+- Public transport
+- Voice assistant
+- Journey replay
+- Demo mode
+- Settings (user & caregiver)
+- Dynamic dashboards
 
 **Advanced Features**
-- ✅ Safety engine
-- ✅ Distress detection
-- ✅ Predictive hazards
-- ✅ Distance estimation
-- ✅ Real-time tracking
-- ✅ Object detection mapping
-- ✅ Hazard severity classification
-- ✅ Movement recommendations
+- Safety engine
+- Distress detection
+- Predictive hazards
+- Distance estimation
+- Real-time tracking
+- Object detection mapping
+- Hazard severity classification
+- Movement recommendations
 
-### ⚠️ Known Issues
+### Known Issues
 
 1. **Database RLS Policy** - Infinite recursion in users table policy
    - Workaround: Demo mode fallback in code
@@ -472,13 +473,13 @@ node utils/testAIRoutes.js
    - Workaround: Error handling with user-friendly messages
    - Status: Handled
 
-### 🔄 In Progress
+### In Progress
 
 - Performance optimization for TensorFlow.js
 - Real-time Supabase integration
 - Production deployment prep
 
-### 📋 Future Enhancements
+### Future Enhancements
 
 - Custom TensorFlow.js model training
 - Advanced AR features (depth sensing, spatial audio)
@@ -490,7 +491,7 @@ node utils/testAIRoutes.js
 - Analytics dashboard
 - Wearable device integration
 
-## 🎯 User Flows
+## User Flows
 
 ### User Journey
 1. Land on homepage → Choose "I need assistance"
@@ -525,7 +526,7 @@ node utils/testAIRoutes.js
 5. Review journey history with replay
 6. Configure settings and preferences
 
-## 🔐 Security & Privacy
+## Security & Privacy
 
 - Row Level Security (RLS) on all tables
 - Secure API key management
@@ -534,7 +535,7 @@ node utils/testAIRoutes.js
 - Privacy controls in settings
 - Emergency data access controls
 
-## ♿ Accessibility
+## Accessibility
 
 - WCAG 2.1 AA compliant design
 - Screen reader support
@@ -546,7 +547,7 @@ node utils/testAIRoutes.js
 - Calm guidance mode
 - Reduced motion option
 
-## 🌍 Internationalization
+## Internationalization
 
 Supported languages (in settings):
 - English
@@ -559,7 +560,7 @@ Supported languages (in settings):
 - German (Deutsch)
 - Arabic (العربية)
 
-## 🧪 Testing
+## Testing
 
 ### Manual Testing
 - User flows tested
@@ -577,22 +578,22 @@ Supported languages (in settings):
 }
 ```
 
-## 📊 Performance
+## Performance
 
 - Lighthouse score: TBD
 - First Contentful Paint: TBD
 - Time to Interactive: TBD
 - Bundle size: TBD
 
-## 🤝 Contributing
+## Contributing
 
 This is a private project. For questions or issues, contact the development team.
 
-## 📄 License
+## License
 
 Private - All rights reserved
 
-## 🆘 Troubleshooting
+## Troubleshooting
 
 ### Database Connection Issues
 ```bash
@@ -628,7 +629,7 @@ npm run dev
 - Verify file has content
 - Restart dev server
 
-## 📞 Support
+## Support
 
 **Quick Links:**
 - Database issues → `database/QUICK_FIX.md`
@@ -642,38 +643,38 @@ npm run build        # Build production
 node test-db.mjs     # Test database
 ```
 
-## 🎯 Roadmap
+## Roadmap
 
-### Phase 1: Foundation ✅
-- [x] UI components (50+)
-- [x] Page structure (12 pages)
-- [x] Service scaffolding
-- [x] Database schema
-- [x] Basic features
+### Phase 1: Foundation (Done)
+- UI components (50+)
+- Page structure (12 pages)
+- Service scaffolding
+- Database schema
+- Basic features
 
-### Phase 2: Integration 🔄
-- [x] Supabase setup
-- [x] Map integration
-- [x] Routing service
-- [ ] Authentication flow
-- [ ] Real-time updates
+### Phase 2: Integration (In Progress)
+- Supabase setup (Done)
+- Map integration (Done)
+- Routing service (Done)
+- Authentication flow (Pending)
+- Real-time updates (Pending)
 
-### Phase 3: AI & Detection 🔄
-- [x] Groq AI backend
-- [x] AI assistant UI
-- [ ] TensorFlow.js models
-- [ ] Real-time detection
-- [ ] Voice synthesis
+### Phase 3: AI & Detection (In Progress)
+- Groq AI backend (Done)
+- AI assistant UI (Done)
+- TensorFlow.js models (Pending)
+- Real-time detection (Pending)
+- Voice synthesis (Pending)
 
-### Phase 4: Production 📋
-- [ ] Testing suite
-- [ ] Performance optimization
-- [ ] Deployment
-- [ ] Monitoring
-- [ ] Documentation
+### Phase 4: Production (Planned)
+- Testing suite (Pending)
+- Performance optimization (Pending)
+- Deployment (Pending)
+- Monitoring (Pending)
+- Documentation (Pending)
 
 ---
 
-**Built with ❤️ for accessibility and independence**
+Built for accessibility and independence
 
 Version: 1.0.0 | Last Updated: 2024
